@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+  /* background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  font-family: 'Karla', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  height: 90vh;
+  overflow: hidden;
+  /* background-color: red; */
+  font-family: 'Karla', sans-serif;
+}
+
+.button {
+  background-color: #682ab9;
+  border-radius: 100px;
+  border: none;
+  /* font-size: 16px; */
+  color: white;
+  /* padding: 15px 40px; */
+  cursor: pointer;
+  box-shadow: 0px 3px 10px #682ab9b0;
+  transition: .3s;
+  font-weight: bold;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 12px 25px -5px #682ab9b0;
+}
+
+.button:active {
+  transform: scale(.8);
+  box-shadow: 0px 3px 10px #682ab9b0;
+  background-color: #000000;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-container h1 {
+  color: #320074;
+  font-size: 31.25px;
+  font-weight: bold;
+}
+
+.intro-container h3 {
+  color: #320074;
+  font-size: 16px;
+}
+
+.intro-container .buttons .customise-btn {
+  background-color: transparent;
+  color: #682ab9;
+  box-shadow: none;
+  /* border: 1px solid #682ab9; */
+  padding: 25px 30px !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  /* margin-left: 20px; */
+  font-family: 'Karla', sans-serif;
+}
+
+.customise-btn:active {
+  background-color: white;
+  color: #682ab9;
+}
+
+.intro-container .buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-container button {
+  font-size: 16px;
+  padding: 15px 40px;
+}
+
+.customise-container {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 0px solid rgb(218, 218, 218);
+  padding: 20px;
+  color: #320074;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, .3);
+  box-shadow: 5px 5px 40px -15px #682ab9b0;
+}
+
+input[type=range] {
+  height: 24px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 80%;
+  background-color: transparent;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #FFFFFF;
+  border-radius: 30px;
+  border: 0px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #2497E3;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #682AB9;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #FFFFFF;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #FFFFFF;
+  border-radius: 30px;
+  border: 0px solid #000000;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #2497E3;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #682AB9;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #FFFFFF;
+  border: 0px solid #000000;
+  border-radius: 60px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #FFFFFF;
+  border: 0px solid #000000;
+  border-radius: 60px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #2497E3;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #682AB9;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #FFFFFF;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #FFFFFF;
+}
+
+select {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0px solid #682AB9;
+  outline: none;
+}
+
+select option {
+  width: 10px;
+}
+
+
+.trivia-container {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, .3);
+  padding: 50px;
+  /* overflow: auto !important; */
+  height: 70%;
+  width: 70%;
+  border: 0;
+  border-radius: 10px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 40px -15px #682ab9b0;
+  align-items: center;
+}
+
+.trivia-container h2 {
+  /* background-color: green; */
+  color: #320074;
+  font-size: 31.25px;
+  font-weight: bold;
+}
+
+.trivia-container-2 {
+  padding: 30px;
+  /* background-color: blue; */
+  overflow: auto !important;
+  height: 80%;
+  width: 90%;
+  border-radius: 10px;
+  border: 0px solid rgb(218, 218, 218);
+}
+
+.trivia-buttons {
+  /* background-color: yellow; */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 20px; */
+}
+
+.trivia-buttons button {
+  font-size: 12px;
+  padding: 10px 30px;
+
+}
+
+.trivia-buttons .back-button {
+  background-color: transparent;
+  box-shadow: none;
+  color: #682ab9;
+
+}
+
+.answers {
+  display: flex;
+  flex-direction: row;
+  margin-top: 7px;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+button.answer {
+  padding: 5px 15px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: 0px solid rgb(218, 218, 218);
+  background-color: white;
+}
+
+.question-text {
+  color: #320074;
+}
+
+.score-text {
+  margin-bottom: 10px;
+  color: #293264;
+}
