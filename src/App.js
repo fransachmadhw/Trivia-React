@@ -10,8 +10,8 @@ function App() {
   const [customisation, setCustomisation] = React.useState([])
   const [isFetched, setIsFetched] = React.useState(false)
   const [triviaArray, setTriviaArray] = React.useState()
-  const [score, setScore] = React.useState(0)
-  const [error, setError] = React.useState(null)
+  // const [score, setScore] = React.useState(0)
+  // const [error, setError] = React.useState(null)
   const [isCustomisationHidden, setIsCustomisationHidden] = React.useState(true)
   const [numOfQuestions, setNumOfQuestions] = React.useState("5")
 	const [difficulty, setDifficulty] = React.useState("easy")
@@ -34,10 +34,10 @@ function App() {
         setTriviaArray(objsArray)
         setIsChecked(false);
       })
-      .catch((err) => {
-        // console.log(err.message);
-        setError(err);
-      })
+      // .catch((err) => {
+      //   // console.log(err.message);
+      //   setError(err);
+      // })
       .finally(() => {
         //setLoading(false);
         setIsFetched(true);
@@ -119,7 +119,6 @@ function App() {
 
   function checkAnswersButton() {
     setIsChecked(true)
-    setScore(correctAnswersNum)
   }
 
   function correctAnswersNum() {
@@ -147,7 +146,7 @@ function App() {
         !started ? (
           <div className='intro-container'>
             <h1>Trivia</h1>
-            <h3>I promise it's gonna be lit 😉</h3>
+            <h3>I promise it's gonna be tough 😉</h3>
             <div className='buttons'>
               <button className='button' onClick={() => updateCustomisation(numOfQuestions, category, difficulty)}>Start quiz</button>
               <button className='button customise-btn' onClick={() => setIsCustomisationHidden(e => !e)}>{isCustomisationHidden ? 'Customise' : 'Back'}</button>

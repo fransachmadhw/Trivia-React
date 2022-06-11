@@ -4,13 +4,23 @@
 }
 
 body {
+  padding: 2rem;
+  font-family: 'Karla', sans-serif;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: -1;
   background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
   /* background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 2rem;
-  font-family: 'Karla', sans-serif;
 }
 
 main {
@@ -253,6 +263,29 @@ select option {
   border: 0px solid rgb(218, 218, 218);
 }
 
+@media screen and (max-width: 420px) {
+  /* main {
+    width: 100vw;
+    overflow: hidden;
+  } */
+
+  body {
+    padding: 2rem 0rem;
+  }
+
+  .trivia-container {
+    height: 75%;
+    width: 80%;
+    /* width: 100%; */
+    padding: 20px;
+  }
+
+  .trivia-container-2 {
+    padding: 10px;
+    width: 100%;
+  }
+}
+
 .trivia-buttons {
   /* background-color: yellow; */
   display: flex;
@@ -281,6 +314,7 @@ select option {
   margin-top: 7px;
   margin-bottom: 20px;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 button.answer {
