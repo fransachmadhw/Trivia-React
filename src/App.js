@@ -201,6 +201,12 @@ function App() {
               </div>
               )
             }
+            {/* <div className='powered'>
+              <h3>Powered by </h3>
+              <a href='https://opentdb.com/'>
+                <img src='https://opentdb.com/images/logo-banner.png' width='55px'/>
+              </a>
+            </div> */}
           </div>
         ) : (
           <div className='trivia-container'>
@@ -246,6 +252,12 @@ function App() {
           </div>
         )
       }
+      <div className='powered'>
+        <a href='https://opentdb.com/'>Powered by </a>
+        <a href='https://opentdb.com/'>
+          <img src='https://opentdb.com/images/logo-banner.png'/>
+        </a>
+      </div>
     </main>
   );
 }
