@@ -367,6 +367,6 @@ button.answer {
 
 @media screen and (max-width: 420px) {
   .powered {
-    bottom: 8%;
+    bottom: 5%;
   }
 }
